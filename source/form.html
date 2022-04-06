@@ -13,27 +13,140 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
             <li class="site-list__item site-list__item--current">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Подбор программы
-              </a>
+              <a>Подбор программы</a>
             </li>
           </ul>
       </nav>
     </header>
-    <main class="main-container">
-
-
-
+    <main class="main-container-form">
+      <section class="form-products">
+        <h1 class="form-products__title">Подбор программы</h1>
+        <p class="form-products__text">
+          Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота
+        </p>
+        <form class="form-cat" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group form-cat__name">
+            <span class="form-cat__label">
+              <label for="appointment-name">
+                Имя:*</label>
+            </span>
+            <input class="field" type="text" id="appointment-name" name="appointment-name" placeholder="Барсик">
+          </p>
+          <p class="field-group form-cat__weight">
+            <span class="form-cat__label">
+              <label for="appointment-weight">
+                Вес (кг):*</label>
+            </span>
+            <input class="field" type="text" id="appointment-weight" name="appointment-weight" placeholder="7">
+          </p>
+          <p class="field-group form-cat__age">
+            <span class="form-cat__label">
+              <label for="appointment-age">
+                Возраст (лет):
+              </label>
+            </span>
+            <input class="field" type="text" id="appointment-age" name="appointment-age" placeholder="7">
+          </p>
+        </form>
+        <fieldset class="form-cat__filter">
+          <legend class="visually-hidden">Выбор программы</legend>
+          <ul class="form-cat__filter-list">
+            <li class="form-cat__filter-item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="programm-group" value="shaving-supplies"  checked>
+                <span class="control-label">Похудение</span>
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="programm-group" value="care-products">
+                <span class="control-label">Набор массы</span>
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="programm-group" value="accessories">
+                <span class="control-label">Не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+      <section class="form-cat-contact">
+        <h2 class="form-cat-contact__title">Контактные данные (владельца кота)</h2>
+        <form class="form-cat-contact__form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="form-cat-contact__email field-group">
+            <label class="visually-hidden" for="form-cat-contact__email">E-mail:*</label>
+            <input class="field" placeholder="kuklachev@gmail.com" type="email" name="form-cat-contact__email" id="form-cat-contact__email" required>
+          </p>
+          <p class="field-group form-cat-contact__phone">
+            <label class="form-label" for="form-cat-contact__phone">Телефон:*</label>
+            <input class="field" type="tel" id="form-cat-contact__phone" name="form-cat-contact__phone" placeholder="8 (960) 900-60-90">
+          </p>
+        </form>
+      </section>
+      <section class="form-cat-comment">
+        <h2 class="form-cat-comment__title">Комментарий</h2>
+        <form class="form-cat-comment__form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group form-cat-comment__text">
+            <textarea class="field" type="text" id="form-cat-comment__text" name="form-cat-comment__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </form>
+      </section>
+      <section class="form-cat-additional">
+        <fieldset class="form-cat-additional__group">
+          <h2>Дополнительно</h2>
+            <ul class="form-cat-additional__list">
+              <li class="form-cat-additional__item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="Сахарозаменитель" checked>
+                  <span class="control-label">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="form-cat-additional__item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="Питьевая вода">
+                  <span class="control-label">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="form-cat-additional__item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="Молоко">
+                  <span class="control-label">Молоко</span>
+                </label>
+              </li>
+              <li class="form-cat-additional__item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="Витамины">
+                  <span class="control-label">Витамины</span>
+                </label>
+              </li>
+            </ul>
+        </fieldset>
+      </section>
+      <button class="button form-cat-add-option__button" type="submit" >Отправить заявку</button>
+      <small class="stats__legend stats__legend--bottom">
+      * — Обязательные поля
+      </small>
     </main>
+    <section class="address-map">
+      <h2>Наше местоположение</h2>
+      <address class="address-map__wrapper">
+        <strong class="address-map__title">Приглашаем к сотрудничеству дилеров!</strong>
+        <p class="address-map__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+      </address>
+      <div class="address-map__picture">
+      <img class="address-map__picture--background"src="img/location.png" width="320" height="362" alt="Карта местоположения">
+    </div>
+    </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper wrapper">
         <div class="main-footer__social social">
