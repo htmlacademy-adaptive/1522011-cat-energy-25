@@ -1,16 +1,48 @@
 .intro {
-  height: 100%;
-  width: 100%;
   background-size: cover;
   background-image: url("../img/index-group.png");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index-group.png");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .intro__picture {
+    position: relative;
+    width: 709px;
+    height: 609px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__picture {
+    width: 552px;
+    height: 459px;
+
+  }
 }
 
 .intro__name {
+  width: 255px;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
+  align-items: center;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #000000;
+  }
 }
 
 .intro__subtitle {
@@ -19,4 +51,30 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #000000;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .intro__select {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    min-height: 48px;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .intro__select {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    min-height: 54px;
+  }
 }
