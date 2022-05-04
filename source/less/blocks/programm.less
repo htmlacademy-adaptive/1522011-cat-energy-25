@@ -71,8 +71,15 @@
 .programms__wrapper {
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: center;
   }
 }
 

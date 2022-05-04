@@ -1,13 +1,17 @@
 .intro {
-  background-size: cover;
+  width: 310px;
+  background-size: 320px 302px;
   background-image: url("../img/index-group.png");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     background-image: none;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-size: 1200px 100%;
     background-image: url("../img/index-group.png");
   }
 }
@@ -26,6 +30,12 @@
     height: 459px;
 
   }
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro__name {
@@ -65,7 +75,6 @@
   .intro__select {
     font-size: 20px;
     line-height: 20px;
-    width: 244px;
     min-height: 48px;
   }
 }
@@ -74,7 +83,6 @@
   .intro__select {
     font-size: 20px;
     line-height: 20px;
-    width: 244px;
     min-height: 54px;
   }
 }
