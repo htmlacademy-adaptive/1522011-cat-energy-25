@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -12,7 +13,7 @@
         <img src="img/logo-2.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__togglec visually-hidden" type="button"><span >Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
               <a>Главная</a>
@@ -34,12 +35,12 @@
       <section class="intro">
         <div class="intro__wrapper wrapper">
           <h1 class="intro__name">
-            Функциональное питание для котов!
+            Функциональное питание для котов
           </h1>
           <p class="intro__subtitle">
             Занялся собой? Займись котом!
           </p>
-          <img class="intro__picture" src="img/index-can-mobile.svg" width="280" height="270" alt="Лакомство со вкусом курицы">
+          <img class="intro__picture" src="img/index-can.svg" width="280" height="270" alt="Лакомство со вкусом курицы">
           <a class="button intro__select" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -47,14 +48,14 @@
         <h2 class="visually-hidden">
           Программы
         </h2>
-        <ul class="programms wrapper">
+        <ul class="programms__wrapper">
           <li class="programm">
             <img src="img/cat_back-slim.svg" width="50" height="53" alt="Продукты SLIM" class="programm__image">
             <h3 class="programm__number">Похудение</h3>
             <p class="programm__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a href="catalog.html">
+            <a class="programm__cat" href="catalog.html">
               Каталог SLIM
               <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
@@ -68,7 +69,7 @@
             <p class="programm__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a href="catalog.html">
+            <a class="programm__cat" href="catalog.html">
               Каталог PRO
               <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
@@ -138,13 +139,13 @@
         <p class="address-map__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
       </address>
       <div class="address-map__picture">
-        <img class="address-map address-map__picture--background" src="img/location.png" width="320" height="362" alt="Карта местоположения">
+        <img class="address-map address-map__picture--background" src="img/location.png" width="1200" height="400" alt="Карта местоположения">
       </div>
     </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper wrapper">
+        <img class="main-footer__logo-footer" src="img/footer-logo.svg" width="128" height="24" alt="Кэт Энерджи">
         <div class="main-footer__social social">
-          <img class="main-footer__logo-footer" src="img/footer-logo.svg" width="128" height="24" alt="Кэт Энерджи">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte visually-hidden" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
