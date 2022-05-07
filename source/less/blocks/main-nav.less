@@ -1,3 +1,8 @@
+.main-nav {
+  display: flex;
+  align-self: center;
+}
+
 .main-nav__list {
   margin: 0 auto;
   padding: 0;
@@ -8,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,4 +34,29 @@
   }
 }
 
+.main-nav__list--black {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 
+  @media (min-width: @tablet-width) {
+    min-width: 440px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.main-nav__list--black a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}

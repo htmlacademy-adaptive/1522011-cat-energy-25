@@ -10,6 +10,11 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .stats {
@@ -19,4 +24,33 @@
   line-height: 16px;
   color: inherit;
   text-transform: none;
+  margin: 0 40px;
 }
+
+.form-cat__button {
+  display: flex;
+  flex-direction: column;
+  min-height: 85px;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+  @media (min-width: @tablet-width) {
+    .form-cat__button--center {
+      width: 282px;
+      height: 52px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .form-cat__button--center {
+      width: 568px;
+    }
+  }
+

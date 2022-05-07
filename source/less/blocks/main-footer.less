@@ -21,6 +21,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 30px 19px 22px 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,6 +29,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 58px 30px 55px 30px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 57px 110px 58px 110px;
+  }
+}
+
+.copyright__link {
+  width: 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
