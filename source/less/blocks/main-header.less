@@ -1,6 +1,7 @@
 .main-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 42px 30px
 }
 
 .main-header__logo {
@@ -15,4 +16,19 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .main-header--over {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    width: 100%;
+  }
+}
 
+.main-header__wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(auto, 1018px);
+  justify-content: center;
+  align-items: center;
+}
